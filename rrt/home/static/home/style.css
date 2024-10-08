@@ -1,0 +1,400 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header */
+header{
+    background-color: #0c0c0c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.47);
+}
+header h1{
+    color: white;
+}
+.welcome{
+    left: 90px;
+    position: relative;
+}
+.username{
+    font-size: 25px;
+    font-weight: Bold;
+    color: white;
+}
+.header-right-items{
+    text-align: right;
+    padding: 0;
+    position: relative;
+    right: 90px;
+    margin: 30px 10px 10px 10px;
+    /*background-color: aqua;*/
+}
+
+.header-right-flex-items{
+    background-color: silver;
+}
+
+.header-buttons{
+    color: white;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.card{
+    text-decoration: none;
+    margin-left: 5px;
+    color: orangered;
+}
+
+.card-count{
+    background-color: orangered;
+    padding: 3px;
+    border-radius: 20px;
+    margin: -10px;
+}
+.card-count img{
+    margin: -15px;
+}
+.card-count a{
+    color: white;
+}
+
+/* End header */
+p-0{
+    padding: 0;
+}
+m-0{
+    margin: 0;
+}
+
+/* Banner*/
+.banner-section{
+    text-align: center;
+    height: 500px;
+    background: url("images/dark-background-texture.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 90px;
+}
+.section h3{
+    margin: 90px 0 0 0;
+    font-size: 45px;
+    color: white;
+}
+em{
+    color: orangered;
+}
+.banner-img img{
+    padding: 0px;
+    height: 400px;
+}
+/* End banner*/
+
+/* Dishes */
+.price, #available{
+    color: orangered;
+}
+.details-view{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.details-view a{
+    color: white;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 40px;
+    background-color: orangered;
+}
+#available{
+    padding: 2px 5px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border: 1px solid;
+    border-radius: 2px;
+}
+.all-dish{
+    background: url("images/back.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 30px 90px;
+}
+.dishes{
+    background-color: silver;
+    padding: 0px 13px;
+    border-radius: 20px;
+}
+#dish-img img{
+    height: 150px;
+    width: 100%;
+}
+
+
+@media(max-width: 930px) {
+    .all-dish{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* End dishes */
+
+/* Footer*/
+
+footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+}
+
+footer h4{
+    color: white;
+}
+
+/* End footer*/
+
+
+
+
+
+
+/* Details HTML Page*/
+.body {
+    margin: 0;
+    padding: 0;
+    background: url("images/back.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.all-back-items{
+    background-color: orangered;
+    padding: 7px 12px;
+    display: flex;
+    border-radius: 20px;
+    width: 90px;
+    left: 300px;
+    position: relative;
+}
+.back{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.back-img{
+    height: 15px;
+}
+.flat-details{
+    background-color: rgba(0, 0, 0, 0.58);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 2px solid orangered;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.flat-details h3, .flat-details span{
+    color: white;
+}
+.span{
+    font-size: 20px;
+}
+.flat-details h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.price em{
+    font-weight: bold;
+    color: orangered;
+}
+.flat-details img{
+    max-height: 250px
+}
+.add-card-button{
+    font-size: 20px;
+    padding: 7px 12px;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.span em{
+    color: white;
+}
+
+/* End Details HTML Page*/
+
+
+/* Card HTML Page*/
+.card-body {
+    margin: 0;
+    padding: 0;
+    background: url("images/back.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+
+}
+.head{
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-back-items{
+    font-size: 20px;
+    padding: 7px 12px;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.card-back{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.back-img{
+    height: 15px;
+}
+.delete-card{
+    padding: 7px 12px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.card-section{
+    margin: 0 90px;
+}
+.card-items{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: white;
+    padding: 10px 30px;
+}
+.img img{
+    height: 250px;
+}
+.card-dishes{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 40px;
+}
+.dish-name-and-price{
+    display: flex;
+    justify-content: space-around;
+}
+.dish-last-info p{
+    font-size: 15px;
+}
+.card-quantity{
+    color: orangered;
+    font-weight: bold;
+}
+.command-button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+}
+/* End Card HTML Page*/
+
+
+/* Buy */
+.bank-img{
+    height: 100px;
+}
+.my-card-body{
+    margin: 0;
+    padding: 0;
+    background: url("images/back.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.buy-parent{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.53);
+    margin: 20px 90px;
+}
+
+.input-commun-style{
+    height: 40px;
+    border: 2px solid orangered;
+    border-radius: 7px;
+}
+
+.input-width-18{
+    width: 18vw;
+}
+
+.input-width-40{
+    width: 36vw;
+}
+
+.input-width-12{
+    width: 12vw;
+}
+
+button{
+    width: 36vw;
+    height: 40px;
+    border-radius: 7px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+.buy-head{
+    margin: 0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.buy-card-back-items{
+    font-size: 20px;
+    padding: 7px 12px;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+.buy-card-back{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*
+    height: 40px;
+    width: 40vw;
+    border: 2px solid orangered;
+    border-radius: 7px;
+*/
+
+/* End buy */

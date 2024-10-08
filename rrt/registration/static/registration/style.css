@@ -1,0 +1,56 @@
+
+.logo-parent{
+    text-align: center;
+}
+.restaurant-logo{
+    margin: 20px auto;
+}
+
+body{
+    background: url("images/back.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.all-items{
+    background-color: rgba(0, 0, 0, 0.34);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 2px solid orangered;
+    padding: 10px;
+    border-radius: 20px;
+}
+.all-forms{
+
+}
+
+.input-style{
+    height: 40px;
+    width: 40vw;
+    border: 2px solid orangered;
+    border-radius: 7px;
+}
+
+.button-style{
+    height: 40px;
+    width: 40vw;
+    border: None;
+    border-radius: 7px;
+    background-color: orangered;
+    color: white;
+}
+.question{
+    color: white;
+}
+.question-link{
+    color: blue;
+    text-decoration: none;
+}
+.title{
+    color: white;
+}
+.error-message{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+}

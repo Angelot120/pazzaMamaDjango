@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78ec0e65-7991-4d16-8bf5-2c44dc04275a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2eoZCBDRfRttybHVJnnAFwv42er" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Python.admin.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.manage.executor": "Run",
+    "Python.views.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ADN21/PycharmProjects/2rt",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\home\static\home\images" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\registration\static\registration\images" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\registration\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\home\static\home\images" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\registration\static\registration\images" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\registration\static\images" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\registration\templates" />
+      <recent name="C:\Users\ADN21\PycharmProjects\2rt\rrt\media" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78ec0e65-7991-4d16-8bf5-2c44dc04275a" name="Changes" comment="" />
+      <created>1712572761294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712572761294</updated>
+      <workItem from="1712572769657" duration="1972000" />
+      <workItem from="1712574768248" duration="14574000" />
+      <workItem from="1712650195966" duration="19426000" />
+      <workItem from="1712672131988" duration="6940000" />
+      <workItem from="1712681354719" duration="2343000" />
+      <workItem from="1712683766613" duration="609000" />
+      <workItem from="1712741934525" duration="16651000" />
+      <workItem from="1712823516851" duration="26416000" />
+      <workItem from="1712908013562" duration="11345000" />
+      <workItem from="1713196816222" duration="49000" />
+      <workItem from="1713564997450" duration="3120000" />
+      <workItem from="1713653261027" duration="104000" />
+      <workItem from="1713653534604" duration="672000" />
+      <workItem from="1714061832101" duration="24000" />
+      <workItem from="1714061903349" duration="49000" />
+      <workItem from="1714158792148" duration="156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/2rt$views.coverage" NAME="views Coverage Results" MODIFIED="1712749200289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrt/home" />
+    <SUITE FILE_PATH="coverage/2rt$admin.coverage" NAME="admin Coverage Results" MODIFIED="1712576426702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrt/home" />
+    <SUITE FILE_PATH="coverage/2rt$manage.coverage" NAME="manage Coverage Results" MODIFIED="1712657217222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrt" />
+    <SUITE FILE_PATH="coverage/2rt$main.coverage" NAME="main Coverage Results" MODIFIED="1712580631401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

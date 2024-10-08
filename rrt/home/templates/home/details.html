@@ -1,0 +1,39 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{dish_info.name}}</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+
+<body class="body">
+    <br>
+    <span class="all-back-items">
+        <a href="{% url 'home' %}" class="back">
+            <img class="back-img" src="{% static 'home/images/back-button.png' %}" alt="button retour">
+        </a>
+        <a href="{% url 'home' %}" class="back">RETOUR</a>
+    </span>
+    <br>
+
+    <div class="flat-details">
+
+        <h3>{{dish_info.name}}  <span class="price"><em>{{dish_info.price}}€</em></span></h3>
+
+        <img src="{{ dish_info.image.url }}" alt="{{ dish_info.name }}">
+
+        <br><br>
+
+        <span class="span"><em><b>Les ingrediens : </b>{{dish_info.ingredients}}</em></span><br><br>
+
+        <span class="span"><em>{{dish_info.description}}</em></span><br><br>
+
+        <a class="add-card-button" href="{% url 'add_to_card' slug=dish_info.slug %}">Ajouter au panier</a>
+        <br><br>
+    </div>
+
+    <br><br><br>
+
+</body>
+</html>

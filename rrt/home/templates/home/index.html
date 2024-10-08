@@ -1,0 +1,99 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mos Menu</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body class="m-0 p-0">
+    <header>
+        <h1 class="welcome">Bonjour 😊 <span class="price">:)</span></h1>
+
+        <div class="header-right-items">
+
+            {% if not user.is_authenticated %}
+                <a class="header-buttons" href="{% url 'client_signup' %}">Signup</a>
+                <a class="header-buttons" href="{% url 'client_login' %}">Login</a>
+            {% else %}
+                <span class="username">{{user.username}}</span>
+                <a class="header-buttons" href="{% url 'client_logout' %}">Se déconnecter</a>
+                {% if user and user.card.orders.exists %}
+                    <span>
+                        <a href="{% url 'cart' %}">
+                            <img src="{% static 'home/images/panier.png' %}" alt="panier logo" style="height: 23px">
+                        </a>
+                        <span class="card-count"><a href="{% url 'cart' %}" class="card">{{ user.card.orders.count }}</a></span>
+                    </span>
+                {% else %}
+                    <span>
+                        <a href="#">
+                            <img src="{% static 'home/images/panier.png' %}" alt="panier logo" style="height: 23px">
+                        </a>
+                        <span class="card-count"><a href="#" class="card">0</a></span>
+                    </span>
+                {% endif %}
+            {% endif %}
+
+        </div>
+    </header>
+    <br><br><br>
+    <!--{% if user.cart %}
+        <h1 style="color: red">Ce ci est mon panier</h1>
+        <a href="{% url 'cart' %}">Voir le panier ({{ user.cart.orders.count }})</a>
+    {% endif %}
+    <a href="{% url 'cart' %}">Voir le panier ({{ user.card.orders.count }})</a>-->
+    <br><br>
+
+    <section class="banner-section">
+        <br>
+        <img src="{% static 'home/images/small_logo.png' %}" alt="">
+        <br><br>
+        <div class="section">
+            <h3>
+                Bienvenu chez<em> PizzaMama </em>des meilleurs plats pour des fidèles clients.
+            </h3>
+            <div class="banner-img">
+                <img src="{% static 'home/images/ba-img.png' %}" alt="banner image">
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <div class="all-dish">
+        {% for dish in dishes %}
+        <div class="dishes">
+
+                <br>
+                <div id="dish-img">
+                    <img src="{{ dish.image.url }}" alt="{{ dish.name }}">
+                </div>
+
+                <h3>{{dish.name}}  <span class="price">{{dish.price}}€</span></h3>
+
+                <span>les ingrediens : {{dish.ingredients}}</span><br>
+            <br>
+                <!--<span>{{flat.description}}</span><br><br>-->
+
+                {% if dish.isAvailable %}
+                    <div class="details-view">
+                        <span id="available">Disponible</span>
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'dish_details' slug=dish.slug %}">Voir le plat</a>
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+            <br><br>
+        </div>
+        {% endfor %}
+    </div>
+    <br><br><br>
+
+</body>
+
+<footer>
+
+    <h4>Powered by <em>@Angelot du code</em></h4>
+    <h4>&copy;All right reserved</h4>
+
+</footer>
+</html>

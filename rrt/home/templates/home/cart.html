@@ -1,0 +1,58 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body class="card-body">
+    <br>
+    <h1 class="card-title">Panier</h1>
+    <br><br>
+    <div class="head">
+        <span class="card-back-items">
+            <a href="{% url 'home' %}" class="card-back">
+                <img class="back-img" src="{% static 'home/images/back-button.png' %}" alt="button retour">
+            </a>
+            <a href="{% url 'home' %}" class="card-back">RETOUR</a>
+        </span>
+
+        <a href="{% url 'delete-cart' %}" class="delete-card">Supprimer le panier</a>
+    </div>
+
+    <br><br>
+
+    <section class="card-section">
+
+        <div class="card-items">
+            <br>
+            {% for order in orders %}
+
+                <div class="card-dishes">
+                    <div class="img">
+                        <img src="{{ order.flat.image.url }}" alt="{{ flat.name }}">
+                    </div>
+                    <div class="info-details">
+                        <div class="dish-name-and-price">
+                            <h2>{{ order.flat.name }}</h2>
+                            <h2><em>{{ order.flat.price }}€</em></h2>
+                        </div>
+                        <br>
+                        <div class="dish-last-info">
+                            <p>{{ order.flat.ingredients }}</p>
+                            <p>{{ order.flat.description }}</p>
+                            <p class="card-quantity">{{ order.quantity }} dans le panier</p>
+                        </div>
+                    </div>
+                </div>
+            <br><br>
+            {% endfor %}
+
+            <a href="{% url 'buy' %}" class="command-button">Lancer la commande</a>
+            <br><br>
+        </div>
+        <br><br><br>
+    </section>
+
+</body>
+</html>

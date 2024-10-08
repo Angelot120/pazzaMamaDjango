@@ -1,0 +1,35 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{% static 'registration/style.css' %}">
+</head>
+<body>
+
+    <div class="logo-parent">
+        <a href="{% url 'home' %}">
+            <img class="restaurant-logo" src="{% static 'registration/images/small_logo.png' %}" alt="logo du restaurant">
+        </a>
+    </div>
+
+    <div class="all-items">
+        <h1 class="title">Login</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="all-forms">
+                <input class="input-style" type="username" id="username" name="username" placeholder="username" required><br><br><br>
+                <input class="input-style" type="password" id="password" name="password" placeholder="password" required><br><br><br>
+                <button class="button-style" type="submit">se connecter</button>
+            </div>
+        </form>
+
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+        <span class="question">Vous êtes nouveau ?</span>
+        <a class="question-link" href="{% url 'client_signup' %}">S'inscrire</a>
+    </div>
+</body>
+</html>

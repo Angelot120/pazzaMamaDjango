@@ -1,0 +1,49 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paiemant</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body class="my-card-body">
+
+    <br><br>
+    <div class="buy-head">
+    <span class="buy-card-back-items">
+        <a href="{% url 'cart' %}" class="buy-card-back">
+            <img class="back-img" src="{% static 'home/images/back-button.png' %}" alt="button retour">
+        </a>
+        <a href="{% url 'cart' %}" class="buy-card-back">RETOUR</a>
+    </span>
+    <span>.</span>
+    </div>
+        <br>
+    <div class="buy-parent">
+        <img src="{% static 'home/images/ecobank.png' %}" alt="logo Ecobank" class="bank-img">
+        <br><br>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="name-input">
+                <input type="text" name="address" placeholder="adress" required class="input-commun-style input-width-18">
+                <input type="number" name="phonenumber" placeholder="numero de téléphone" required class="input-commun-style input-width-18">
+            </div>
+            <br>
+            <div class="name-input">
+                <input type="text" name="first_name" placeholder="prénom" required class="input-commun-style input-width-18">
+                <input type="text" name="last_name" placeholder="nom" required class="input-commun-style input-width-18">
+            </div>
+            <br>
+            <input type="number" name="cardnumber" placeholder="numéro de carte" maxlength="16" class="input-commun-style input-width-40">
+            <br><br>
+            <div>
+                <input type="date" name="first_name" placeholder="first name" required required class="input-commun-style">
+                <input type="password" name="ccv" placeholder="ccv" required maxlength="3" required class="input-commun-style input-width-12">
+                <input type="number" name="zip" placeholder="zip code" required class="input-commun-style">
+            </div>
+            <br>
+            <button>SUBMIT</button>
+        </form>
+        <br><br>
+    </div>
+</body>
+</html>

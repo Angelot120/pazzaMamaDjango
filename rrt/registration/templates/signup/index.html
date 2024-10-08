@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Singin</title>
+    <link rel="stylesheet" href="{% static 'registration/style.css' %}">
+</head>
+<body>
+
+    <div class="logo-parent">
+        <a href="{% url 'home' %}">
+            <img class="restaurant-logo" src="{% static 'registration/images/small_logo.png' %}" alt="logo du restaurant">
+        </a>
+    </div>
+
+    <div class="all-items">
+        <h1 class="title">Signin</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="all-forms">
+                <input class="input-style" type="email" id="email" name="email" placeholder="email" required><br><br><br>
+                <input class="input-style" type="username" id="username" name="username" placeholder="username" required><br><br><br>
+                <input class="input-style" type="password" id="password" name="password" placeholder="password" required><br><br><br>
+                <button class="button-style" type="submit">s'inscrire</button>
+            </div>
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="error-message">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        </form>
+        <span class="question">Déja client ?</span>
+        <a class="question-link" href="{% url 'client_login' %}">Se connecter</a>
+    </div>
+</body>
+</html>
